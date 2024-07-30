@@ -9,6 +9,17 @@ public class AllTask {
         }
     }
 
+
+    public void updateStatusTrue(){
+        for (int i = 0; i < abstractTasks.length; i++) {
+            if (abstractTasks[i] != null) {
+                if (abstractTasks[i] instanceof ComplexTask) {
+                    abstractTasks[i].status = true;
+                }
+            }
+        }
+    }
+
     public void printInfo(){
         for (int i = 0; i < abstractTasks.length; i++) {
             if (abstractTasks[i] != null){
@@ -17,5 +28,19 @@ public class AllTask {
         }
     }
 
+
+    public void updateStatus(boolean status, AbstractTask abstractTask){
+        abstractTask.status = status;
+    }
+
+    public boolean infoStatus(AbstractTask abstractTask){
+        return abstractTask.status;
+    }
+    public void updatePriority(String priority, AbstractTask abstractTask){
+        abstractTask.priority = priority;
+    }
+    public void updateDescription(String description, AbstractTask abstractTask){
+        abstractTask.description = description;
+    }
 
 }

@@ -8,9 +8,15 @@ public class Main {
 
         complexTask1.assignmentOfStatus();
         AllTask allTask = new AllTask();
+
         allTask.addTask(simpleTask1);
         allTask.addTask(complexTask1);
         allTask.addTask(complexTask2);
+        allTask.updateStatusTrue();
+        allTask.updateStatus(false,complexTask1);
+        allTask.updatePriority("Низкий", complexTask1);
+        allTask.updateDescription("Провести тест совместно с Мухой", complexTask2);
         allTask.printInfo();
+
     }
 }

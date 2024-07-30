@@ -2,8 +2,6 @@ import java.security.PrivateKey;
 
 public class ComplexTask extends AbstractTask{
         private SimpleTask simpleTask;
-        private SimpleTask [] simpleTasks = new SimpleTask[100];
-        private int count = 0;
 
     public ComplexTask(SimpleTask simpleTask) {
         this.simpleTask = simpleTask;
